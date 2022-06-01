@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css" />    
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navigation">
+                <a href="/" class="logo link"><span class="logo__fraction">Web</span>Studio</a>
+                <ul class="site-nav list">
+                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link link page-color">Студия</a></li>
+                    <li class="site-nav__item"><a href="./portfolio.html"
+                                class="site-nav__link link current-page-color underscore">Портфолио</a></li>
+                    <li class="site-nav__item"><a href="/contact" class="site-nav__link link page-color">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="site-contact list">
+                <li class="site-contact__item mail">
+                    <svg class="site-contact__icon mail" width="16px" height="12px">
+                        <use href="./images/icons.svg#icon-header-envelope"></use>
+                    </svg>
+                    <a href="info@example.com" class="site-contact__link link mail">info@example.com</a>
+                </li>
+                <li class="site-contact__item phone">
+                    <svg class="site-contact__icon phone" width="10px" height="16px">
+                        <use href="./images/icons.svg#icon-header-smartphone"></use>
+                    </svg>
+                    <a href="tel:+380991111111" class="site-contact__link link phone">+38 099 111 11 11</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="portfolio-section section">
+            <div class="container">
+                <h1 class="section-title visually-hidden">Наши проекты</h1>
+                <ul class="list btn-group">
+                    <li>
+                        <button type="button" class="button-decoration button-activ link btn-margin">Все</button>
+                    </li>
+                    <li>
+                        <button type="button" class="button-decoration link btn-margin">Веб-сайты</button>
+                    </li>
+                    <li>
+                        <button type="button" class="button-decoration link btn-margin">Приложения</button>
+                    </li>
+                    <li>
+                        <button type="button" class="button-decoration link btn-margin">Дизайн</button>
+                    </li>
+                    <li>
+                        <button type="button" class="button-decoration link btn-margin">Маркетинг</button>
+                    </li>
+                </ul>
+
+                <ul class="list group">
+                    <li class="portfolio-card-margin portfolio-card-shadow">
+                        <a href="/" class="link">
+                            <div class="card-dynamic-part">
+                                <img src="images/img8.jpg" class="portfolio-card-photo" alt="Web-site" width="370"
+                                    height="294" />
+                                <div class="card-dynamic-box card-dynamic-option">
+                                    <p class="card-dynamic-text">Ресурс предлагает комплексные предложения с разным
+                                        уровнем функционала и сервисов.
+                                        Все это позволит посетителю получить исчерпывающие сведения о компании или
+                                        частном
+                                        лице.</p>
+                                </div>
+                            </div>
+                            <div class="potfolio-card-decoration">
+                                <h3 class="card-title">Техноряк</h3>
+                                <p class="card-text">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-card-margin portfolio-card-shadow">
+                        <a href="/" class="link">
+                            <div class="card-dynamic-part">
+                                <img src="images/img9.jpg" class="portfolio-card-photo" alt="Design" width="370"
+                                    height="294" />
+                                <div class="card-dynamic-box card-dynamic-option">
+                                    <p class="card-dynamic-text">Ресурс предлагает комплексные предложения с разным
+                                        уровнем функционала и сервисов.
+                                        Все это позволит посетителю получить исчерпывающие сведения о компании или
+                                        частном
+                                        лице.</p>
+                                </div>
+                            </div>
+                            <div class="potfolio-card-decoration">
+                                <h3 class="card-title">Постер New Orlean vs Golden Star</h3>
+                                <p class="card-text">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-card-margin portfolio-card-shadow">
+                        <a href="/" class="link">
+                            <div class="card-dynamic-part">
+                                <img src="images/img10.jpg" class="portfolio-card-photo" alt="App" width="370"
+                                    height="294" />
+                                <div class="card-dynamic-box card-dynamic-option">
+                                    <p class="card-dynamic-text">Ресурс предлагает комплексные предложения с разным
+                                        уровнем функционала и сервисов.
+                                        Все это позволит посетителю получить исчерпывающие сведения о компании или
+                                        частном
+                                        лице.</p>
+                                </div>
+                            </div>
+                            <div class="potfolio-card-decoration">
+                                <h3 class="card-title">Ресторан Seafood</h3>
+                                <p class="card-text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-card-margin portfolio-card-shadow">
+                        <a href="/" class="link">
+                            <div class="card-dynamic-part">
+                                <img src="images/img11.jpg" class="portfolio-card-photo" alt="Marketing" width="370"
+                                    height="294" />
+                                <div class="card-dynamic-box card-dynamic-option">
+                                    <p class="card-dynamic-text">Ресурс предлагает комплексные предложения с разным
+                                        уровнем функционала и сервисов.
+                                        Все это позволит посетителю получить исчерпывающие сведения о компании или
+                                        частном
+                                        лице.</p>
+                                </div>
+                            </div>
+                            <div class="potfolio-card-decoration">
+                                <h3 class="card-title">Проект Prime</h3>
+                                <p class="card-text">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-card-margin portfolio-card-shadow">
+                        <a href="/" class="link">
+                            <div class="card-dynamic-part">
+                                <img src="images/img12.jpg" class="portfolio-card-photo" alt="App" width="370"
+                                    height="294" />
+                                <div class="card-dynamic-box card-dynamic-option">
+                                    <p class="card-dynamic-text">Ресурс предлагает комплексные предложения с разным
+                                        уровнем функционала и сервисов.
+                                        Все это позволит посетителю получить исчерпывающие сведения о компании или
+                                        частном
+                                        лице.</p>
+                                </div>
+                            </div>
+                            <div class="potfolio-card-decoration">
+                                <h3 class="card-title">Проект Boxes</h3>
+                                <p class="card-text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-card-margin portfolio-card-shadow">
+                        <a href="/" class="link">
+                            <div class="card-dynamic-part">
+                                <img src="images/img13.jpg" class="portfolio-card-photo" alt="Web-site" width="370"
+                                    height="294" />
+                                <div class="card-dynamic-box card-dynamic-option">
+                                    <p class="card-dynamic-text">Ресурс предлагает комплексные предложения с разным
+                                        уровнем функционала и сервисов.
+                                        Все это позволит посетителю получить исчерпывающие сведения о компании или
+                                        частном
+                                        лице.</p>
+                                </div>
+                            </div>
+                            <div class="potfolio-card-decoration">
+                                <h3 class="card-title">Inspiration has no Borders</h3>
+                                <p class="card-text">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-card-margin portfolio-card-shadow">
+                        <a href="/" class="link">
+                            <div class="card-dynamic-part">
+                                <img src="images/img14.jpg" class="portfolio-card-photo" alt="Design" width="370"
+                                    height="294" />
+                                <div class="card-dynamic-box card-dynamic-option">
+                                    <p class="card-dynamic-text">Ресурс предлагает комплексные предложения с разным
+                                        уровнем функционала и сервисов.
+                                        Все это позволит посетителю получить исчерпывающие сведения о компании или
+                                        частном
+                                        лице.</p>
+                                </div>
+                            </div>
+                            <div class="potfolio-card-decoration">
+                                <h3 class="card-title">Издание Limited Edition</h3>
+                                <p class="card-text">MДизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-card-margin portfolio-card-shadow">
+                        <a href="/" class="link">
+                            <div class="card-dynamic-part">
+                                <img src="images/img15.jpg" class="portfolio-card-photo" alt="Marketing" width="370"
+                                    height="294" />
+                                <div class="card-dynamic-box card-dynamic-option">
+                                    <p class="card-dynamic-text">Ресурс предлагает комплексные предложения с разным
+                                        уровнем функционала и сервисов.
+                                        Все это позволит посетителю получить исчерпывающие сведения о компании или
+                                        частном
+                                        лице.</p>
+                                </div>
+                            </div>
+                            <div class="potfolio-card-decoration">
+                                <h3 class="card-title">Проект LAB</h3>
+                                <p class="card-text">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-card-margin portfolio-card-shadow">
+                        <a href="/" class="link">
+                            <div class="card-dynamic-part">
+                                <img src="images/img16.jpg" class="portfolio-card-photo" alt="App" width="370"
+                                    height="294" />
+                                <div class="card-dynamic-box card-dynamic-option">
+                                    <p class="card-dynamic-text">Ресурс предлагает комплексные предложения с разным
+                                        уровнем функционала и сервисов.
+                                        Все это позволит посетителю получить исчерпывающие сведения о компании или
+                                        частном
+                                        лице.</p>
+                                </div>
+                            </div>
+                            <div class="potfolio-card-decoration">
+                                <h3 class="card-title">Growing Business</h3>
+                                <p class="card-text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer-parts">
+                <li class="footer-parts__item list">
+                    <a href="/" class="logo link"><span class="logo__fraction">Web</span>Studio</a>
+                    <address class="">
+                        <ul class="our-contacts">
+                            <li class="our-contacts__list list">
+                                <a href="/" class="our-contact__address">г. Киев, пр-т Леси Украинки, 26</a>
+                            </li>
+                            <li class="our-contacts__list list">
+                                <a href="info@example.com" class="our-contact__link">info@example.com</a>
+                            </li>
+                            <li class="our-contacts__list list">
+                                <a href="tel:+380991111111" class="our-contact__link">+38 099 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </li>
+                <li class="footer-parts__item list">
+                    <h2 class="footer-parts__title">Присоединяйтесь</h2>
+                    <ul class="our-sotial">
+                        <li class="our-sotial__list">
+                            <a href="" target="_blank">
+                                <svg class="our-sotial__icon" width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-instagram-footer"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="our-sotial__list">
+                            <a href="" target="_blank" class="our-sotial__link">
+                                <svg class="our-sotial__icon" width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-twitter-footer"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="our-sotial__list">
+                            <a href="" target="_blank" class="our-sotial__link">
+                                <svg class="our-sotial__icon" width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-facebook-footer"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="our-sotial__list">
+                            <a href="" target="_blank" class="our-sotial__link">
+                                <svg class="our-sotial__icon" width="20px" height="20px">
+                                    <use href="./images/icons.svg#icon-linkedin-footer"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer-parts__item list">
+                    <h2 class="footer-parts__title">Подпишитесь на рассылку</h2>
+                    <form>
+                        <ul class="user-contact list group">
+                            <li class="user-contact__list">
+                                <label for="user mail footer">
+                                    <input type="email" class="user-contact__input" name="user mail footer"
+                                        id="user mail footer" value="" placeholder="E-mail" required>
+                                </label>
+                            </li>
+                            <li>
+                                <button type="submit" class="user-contact__button">Отправить</button>
+                            </li>
+                        </ul>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>

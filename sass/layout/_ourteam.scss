@@ -1,0 +1,122 @@
+.third-section {
+    background-color: var(--bg-team-color);
+    font-size: 16px;
+    line-height: 1.187;
+    letter-spacing: 0.03em;
+}
+.ourteam__title {
+    display: block;
+    width: 100%;
+    height: 42px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    font-family: "Roboto";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.166;
+
+    margin-bottom: 50px;
+    @include mob {
+        margin-bottom: 30px;
+    }
+    @include tablet {
+        margin-bottom: 30px;
+    }
+    @include desktop{
+        margin-bottom: 50px;
+    }
+}
+.ourteam_item {
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: -30px;
+
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+    }
+    @include desktop {
+        margin-left: -30px;
+    }
+}
+.ourteam__list {
+    margin-bottom: 30px;
+    width: 100%;
+    
+    @include mob {
+        width: 450px;
+    }
+    @include tablet {
+        width: 354px;
+        margin-left: 30px;
+    }
+    @include desktop {
+        width: 270px;
+        margin-left: 30px;
+        }
+}
+
+.ourteam__card {
+    align-items: center;
+    width: 100%;   
+    background: var(--bg-main-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    text-align: center;
+}
+.card-photo {
+    margin-bottom: 30px;
+}
+.third-section .title {
+    margin-bottom: 10px;
+    font-weight: 500; 
+    font-size: 16px;
+}
+.third-section .text {
+    margin-bottom: 16px;
+    font-weight: 400;
+    color: var(--text-contact-color);
+}
+.social {
+    display: flex;
+    justify-content: center;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 30px;
+    margin-left: -10px;
+}
+.social-list {
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;  
+    border-radius: 50%;
+
+    transition: background-color 250ms cubic-bezier(0.4,
+                0,
+                0.2,
+                1);
+    &:hover, &:focus {
+        background-color: var(--bg-botton-color);
+        .social-decor, 
+        .social-decor {
+            fill: var(--bg-main-color);
+        }
+    }
+}
+.social-decor {
+    margin-top: 4px;
+    fill: var(--icon-color);
+
+    transition: fill 250ms cubic-bezier(0.4,
+                0,
+                0.2,
+                1);
+}

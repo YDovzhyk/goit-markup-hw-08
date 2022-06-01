@@ -1,0 +1,72 @@
+
+.our-project {
+    display: none;
+    @include mob {
+        display: none;
+    }
+    @include tablet {
+        display: none;
+    }
+    @include desktop {
+    background-color: var(--bg-main-color);
+    padding-top: 0px;
+    display: block;
+    }
+}
+.padding-correction {
+    padding-top: 0px;
+}
+.container .our-project__title {
+    display: block;
+    min-width: 376px;
+    height: 42px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.166;
+    margin-bottom: 50px;
+}
+.our-project__group {
+    margin-left: -30px;
+}
+.our-project__card {
+    margin-bottom: 30px;
+}
+
+.bottom-card-position {
+    position: relative;
+    display: flex;
+}
+.bottom-card {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    top: 76%;
+    left: 0%;
+    transform: translate(0%, 0%);
+
+    width: 370px;
+    height: 70px;
+
+    background-color: rgba(47, 48, 58, 0.8); 
+    outline: 2px red;
+}
+.our-project__name {
+    position: absolute;
+    display: inline-block;
+    width: 370px;
+    text-align: center;
+    
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--text-add-color);
+}

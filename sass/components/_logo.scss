@@ -1,0 +1,13 @@
+.logo {
+    margin-right: auto;
+
+    font-family: var(--additional-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    color: var(--text-main-color);
+}
+.logo__fraction {
+    font-family: var(--main-font);
+    color: var(--text-additional-color);
+}

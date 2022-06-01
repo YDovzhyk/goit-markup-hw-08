@@ -1,0 +1,16 @@
+.section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+@include mob {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    }
+@include tablet {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+@include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
+}
