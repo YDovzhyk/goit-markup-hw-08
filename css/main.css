@@ -399,6 +399,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 90%;
+  overflow-y: auto;
 }
 
 .mob-menu-button {
