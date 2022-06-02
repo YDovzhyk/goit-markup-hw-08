@@ -15,14 +15,13 @@
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css" />    
-
 </head>
 
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <div class="container">
             <nav class="navigation">
-                <a href="/" class="logo link"><span class="logo__fraction">Web</span>Studio</a>
+                <a href="/" class="logo header-logo link"><span class="logo__fraction">Web</span>Studio</a>
                 <ul class="site-nav list">
                     <li class="site-nav__item"><a href="./index.html"
                             class="site-nav__link link current-page-color underscore">Студия</a></li>
@@ -44,15 +43,69 @@
                     <a href="tel:+380991111111" class="site-contact__link link phone">+38 099 111 11 11</a>
                 </li>
             </ul>
+
+                <button type="button" class="header-mob__button" data-mobile-open>
+                    <svg class="header-mob__icon" width="40px" height="40px">
+                        <use href="./images/icons.svg#icon-burger_line"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="is-hidden mob-menu" data-mobile>
+                <div class="for-button-position">
+                    <button type="button" class="mob-menu-button" data-mobile-close>
+                        <svg class="beckdrop-close-decor" width="50px" height="50px">
+                            <use href="./images/icons.svg#iconclosemob"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="container">
+                    <div class="mob-menu-top">
+                <ul class="mob-menu-nav list">
+                    <li class="mob-site-nav__item"><a href="./index.html"
+                            class="mob-site-nav__link link current-page-color">Студия</a></li>
+                    <li class="mob-site-nav__item"><a href="./portfolio.html" class="site-nav__link link page-color">Портфолио</a></li>
+                    <li class="mob-site-nav__item"><a href="/contact" class="mob-site-nav__link link page-color">Контакты</a></li>
+                </ul>
+                    </div>
+                    <div class="mob-menu-bottom">
+                <ul class="mob-menu-cont list">
+                    <li class="mob-menu-cont__phone">
+                        <a href="tel:+380991111111" class="mob-menu-phone__link link">+38 099 111 11 11</a>
+                    </li>
+                    <li class="mob-menu-cont__mail">
+                        <a href="info@example.com" class="mob-menu-mail__link link">info@example.com</a>
+                    </li>
+                </ul>
+                <ul class="mob-menu-soc list">
+                    <li>
+                        <a href="/" class="mob-menu-soc__link link">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="/" class="mob-menu-soc__link link">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="/" class="mob-menu-soc__link link">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="/" class="mob-menu-soc__link link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header> -->
+    </div>
+        
+    </header>
+    
 
     <main>
-        <section class="hero overlay">
-            <div class="hero_group--position">
-                <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
-            </div>
+        <section class="hero-bg">
+                <div class="overlay">
+                    <div class="hero_group--position">
+                        <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+                        <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
+                    </div>
+                </div>
         </section>
 
         <section class="ourpriority section">
@@ -568,7 +621,7 @@
                     <div class="modal-field-position">
                         <input type="checkbox" name="privacy" id="privacy" value="privacy"
                             class="modal-check visually-hidden">
-                        <label for="privacy" class="check-text">Соглашаюсь с рассылкой и принимаю &#160<span><a href="/"
+                        <label for="privacy" class="check-text">Соглашаюсь с рассылкой и принимаю <span><a href="/"
                                     class="check-text-contract">
                                     Условия договора</a></span>
                         </label>
@@ -576,10 +629,14 @@
                     <button type="submit" class="modal-button">Отправить</button>
                 </form>
             </div>
-
         </div>
     </div>
 
+
+    
+
+
+    <script src="./js/mobile.js"></script>
     <script src="./js/modal.js"></script>
 
 </body>

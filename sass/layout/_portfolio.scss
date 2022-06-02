@@ -51,21 +51,78 @@
 .btn-group {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 56px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-top: 0;
+    padding-left: 0;
+    margin-left: -8px;
+    @include mob {
+        margin-bottom: 46px;
+    }
+    @include tablet {
+        justify-content: center;
+        margin-bottom: 36px;
+    }
+    @include desktop {
+        justify-content: center;
+        margin-bottom: 56px;
+    }
+    
+    
 }
 .btn-margin {
-    flex: 1 1 auto;
+    flex: 0 1 auto;
     margin: 0 8px;
+    margin-bottom: 10px;
+    @include mob {
+        margin-bottom: 15px;
+    }
+    @include tablet {
+        margin-bottom: 0;
+    }
+    @include desktop {
+        margin-bottom: 0;
+    }
 }
 /* Card part */
+.group-position-correction{
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: -20px;
+    @include mob{
+        margin-bottom: -30px;
+    }
+    @include tablet {
+        margin-bottom: 0;
+    }
+    @include desktop {
+        margin-bottom: 0;
+    }
+    
+}
 .portfolio-card-margin {
-    margin: 0 0 30px 0;
-    &:nth-last-child(-n + 3){
+    margin-bottom: 20px;
+    @include mob {
+        margin-bottom: 30px;
+    }
+    @include tablet {
+        margin: 0 0 30px 0;
+        &:nth-last-child(-n + 2){
         margin: 0;
+    }
+    }
+    @include desktop {
+        margin: 0 0 30px 0;
+        &:nth-last-child(-n + 3){
+        margin: 0;
+    }
     }
 }
 .potfolio-card-decoration {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-top: -4px;
     padding-top: 20px;
 
     background: var(--bg-main-color);
@@ -73,7 +130,6 @@
 }
 .card-dynamic-part {
     position: relative;
-    display: flex;
     overflow: hidden;
 }
 .card-dynamic-box {
@@ -84,12 +140,17 @@
     left: 0%;
     
     width: 370px;
-    height: 295px;
+    height: 298px;
     background: rgba(33, 150, 243, 0.9);
     overflow: auto;
 
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.position-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 .card-dynamic-text {
     display: inline-block;
@@ -105,20 +166,35 @@
     margin-bottom: 4px;
     padding-left: 24px;
     padding-right: 24px;
-    max-width: 370px;
+    width: 100%;
+    @include mob {
+        width: 448px;
+    }
+    @include tablet {
+        width: 352px;
+    }
+    @include desktop {
+        width: 368px;
+    }
+    
 
+    font-family: "Roboto";
+    font-weight: 700;
     font-size: 18px;
     line-height: 2.00;
-    letter-spacing: 0.04em;
-    color: var(--text-main-color);
+    letter-spacing: 0.06em;
+    color: #212121;
 }
 .card-text {
     margin-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
 
+    font-family: "Roboto";
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
+    letter-spacing: 0.06em;
     color: var(--text-contact-color);
 }
 .portfolio-card-shadow:hover {

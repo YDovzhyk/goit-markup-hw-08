@@ -22,11 +22,11 @@
     <header class="header">
         <div class="container">
             <nav class="navigation">
-                <a href="/" class="logo link"><span class="logo__fraction">Web</span>Studio</a>
+                <a href="/" class="logo header-logo link"><span class="logo__fraction">Web</span>Studio</a>
                 <ul class="site-nav list">
-                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link link page-color">Студия</a></li>
-                    <li class="site-nav__item"><a href="./portfolio.html"
-                                class="site-nav__link link current-page-color underscore">Портфолио</a></li>
+                    <li class="site-nav__item"><a href="./index.html"
+                            class="site-nav__link link page-color">Студия</a></li>
+                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link link current-page-color underscore">Портфолио</a></li>
                     <li class="site-nav__item"><a href="/contact" class="site-nav__link link page-color">Контакты</a></li>
                 </ul>
             </nav>
@@ -44,7 +44,58 @@
                     <a href="tel:+380991111111" class="site-contact__link link phone">+38 099 111 11 11</a>
                 </li>
             </ul>
+
+                <button type="button" class="header-mob__button" data-mobile-open>
+                    <svg class="header-mob__icon" width="40px" height="40px">
+                        <use href="./images/icons.svg#icon-burger_line"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="is-hidden mob-menu" data-mobile>
+                <div class="for-button-position">
+                    <button type="button" class="mob-menu-button" data-mobile-close>
+                        <svg class="beckdrop-close-decor" width="50px" height="50px">
+                            <use href="./images/icons.svg#iconclosemob"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="container">
+                    <div class="mob-menu-top">
+                <ul class="mob-menu-nav list">
+                    <li class="mob-site-nav__item"><a href="./index.html"
+                            class="mob-site-nav__link page-color link">Студия</a></li>
+                    <li class="mob-site-nav__item"><a href="./portfolio.html" class="site-nav__link link current-page-color">Портфолио</a></li>
+                    <li class="mob-site-nav__item"><a href="/contact" class="mob-site-nav__link link page-color">Контакты</a></li>
+                </ul>
+                    </div>
+                    <div class="mob-menu-bottom">
+                <ul class="mob-menu-cont list">
+                    <li class="mob-menu-cont__phone">
+                        <a href="tel:+380991111111" class="mob-menu-phone__link link">+38 099 111 11 11</a>
+                    </li>
+                    <li class="mob-menu-cont__mail">
+                        <a href="info@example.com" class="mob-menu-mail__link link">info@example.com</a>
+                    </li>
+                </ul>
+                <ul class="mob-menu-soc list">
+                    <li>
+                        <a href="/" class="mob-menu-soc__link link">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="/" class="mob-menu-soc__link link">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="/" class="mob-menu-soc__link link">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="/" class="mob-menu-soc__link link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </div>
+        
     </header>
 
     <main>
@@ -69,12 +120,34 @@
                     </li>
                 </ul>
 
-                <ul class="list group">
+                <ul class="list group group-position-correction">
                     <li class="portfolio-card-margin portfolio-card-shadow">
-                        <a href="/" class="link">
+                        <a href="/" class="link position-link">
                             <div class="card-dynamic-part">
-                                <img src="images/img8.jpg" class="portfolio-card-photo" alt="Web-site" width="370"
-                                    height="294" />
+                                <picture>
+                                    <source
+                                    srcset="
+                                    ./images/product/product-one-desktop.jpg   1x,
+                                    ./images/product/product-one-desktop2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/product/product-one-tablet.jpg   1x,
+                                    ./images/product/product-one-tablet2x.jpg 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/product/product-one-mob.jpg   1x,
+                                    ./images/product/product-one-mob2x.jpg 2x
+                                    "
+                                    media="(min-width: 480px)"
+                                    />
+                                    <img src="./images/product/product-one-desktop.jpg" alt="Product designer"/>
+                                </picture>
                                 <div class="card-dynamic-box card-dynamic-option">
                                     <p class="card-dynamic-text">Ресурс предлагает комплексные предложения с разным
                                         уровнем функционала и сервисов.
@@ -92,8 +165,30 @@
                     <li class="portfolio-card-margin portfolio-card-shadow">
                         <a href="/" class="link">
                             <div class="card-dynamic-part">
-                                <img src="images/img9.jpg" class="portfolio-card-photo" alt="Design" width="370"
-                                    height="294" />
+                                <picture>
+                                    <source
+                                    srcset="
+                                    ./images/product/product-two-desktop.jpg   1x,
+                                    ./images/product/product-two-desktop2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/product/product-two-tablet.jpg   1x,
+                                    ./images/product/product-two-tablet2x.jpg 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/product/product-two-mob.jpg   1x,
+                                    ./images/product/product-two-mob2x.jpg 2x
+                                    "
+                                    media="(min-width: 480px)"
+                                    />
+                                    <img src="./images/product/product-two-desktop.jpg" alt="Product designer"/>
+                                </picture>
                                 <div class="card-dynamic-box card-dynamic-option">
                                     <p class="card-dynamic-text">Ресурс предлагает комплексные предложения с разным
                                         уровнем функционала и сервисов.
@@ -111,8 +206,30 @@
                     <li class="portfolio-card-margin portfolio-card-shadow">
                         <a href="/" class="link">
                             <div class="card-dynamic-part">
-                                <img src="images/img10.jpg" class="portfolio-card-photo" alt="App" width="370"
-                                    height="294" />
+                                <picture>
+                                    <source
+                                    srcset="
+                                    ./images/product/product-three-desktop.jpg   1x,
+                                    ./images/product/product-three-desktop2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/product/product-three-tablet.jpg   1x,
+                                    ./images/product/product-three-tablet2x.jpg 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/product/product-three-mob.jpg   1x,
+                                    ./images/product/product-three-mob2x.jpg 2x
+                                    "
+                                    media="(min-width: 480px)"
+                                    />
+                                    <img src="./images/product/product-three-desktop.jpg" alt="Product designer"/>
+                                </picture>
                                 <div class="card-dynamic-box card-dynamic-option">
                                     <p class="card-dynamic-text">Ресурс предлагает комплексные предложения с разным
                                         уровнем функционала и сервисов.
@@ -130,8 +247,30 @@
                     <li class="portfolio-card-margin portfolio-card-shadow">
                         <a href="/" class="link">
                             <div class="card-dynamic-part">
-                                <img src="images/img11.jpg" class="portfolio-card-photo" alt="Marketing" width="370"
-                                    height="294" />
+                                <picture>
+                                    <source
+                                    srcset="
+                                    ./images/product/product-four-desktop.jpg   1x,
+                                    ./images/product/product-four-desktop2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/product/product-four-tablet.jpg   1x,
+                                    ./images/product/product-four-tablet2x.jpg 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/product/product-four-mob.jpg   1x,
+                                    ./images/product/product-four-mob2x.jpg 2x
+                                    "
+                                    media="(min-width: 480px)"
+                                    />
+                                    <img src="./images/product/product-four-desktop.jpg" alt="Product designer"/>
+                                </picture>
                                 <div class="card-dynamic-box card-dynamic-option">
                                     <p class="card-dynamic-text">Ресурс предлагает комплексные предложения с разным
                                         уровнем функционала и сервисов.
@@ -149,8 +288,30 @@
                     <li class="portfolio-card-margin portfolio-card-shadow">
                         <a href="/" class="link">
                             <div class="card-dynamic-part">
-                                <img src="images/img12.jpg" class="portfolio-card-photo" alt="App" width="370"
-                                    height="294" />
+                                <picture>
+                                    <source
+                                    srcset="
+                                    ./images/product/product-five-desktop.jpg   1x,
+                                    ./images/product/product-five-desktop2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/product/product-five-tablet.jpg   1x,
+                                    ./images/product/product-five-tablet2x.jpg 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/product/product-five-mob.jpg   1x,
+                                    ./images/product/product-five-mob2x.jpg 2x
+                                    "
+                                    media="(min-width: 480px)"
+                                    />
+                                    <img src="./images/product/product-five-desktop.jpg" alt="Product designer"/>
+                                </picture>
                                 <div class="card-dynamic-box card-dynamic-option">
                                     <p class="card-dynamic-text">Ресурс предлагает комплексные предложения с разным
                                         уровнем функционала и сервисов.
@@ -168,8 +329,30 @@
                     <li class="portfolio-card-margin portfolio-card-shadow">
                         <a href="/" class="link">
                             <div class="card-dynamic-part">
-                                <img src="images/img13.jpg" class="portfolio-card-photo" alt="Web-site" width="370"
-                                    height="294" />
+                                <picture>
+                                    <source
+                                    srcset="
+                                    ./images/product/product-six-desktop.jpg   1x,
+                                    ./images/product/product-six-desktop2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/product/product-six-tablet.jpg   1x,
+                                    ./images/product/product-six-tablet2x.jpg 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/product/product-six-mob.jpg   1x,
+                                    ./images/product/product-six-mob2x.jpg 2x
+                                    "
+                                    media="(min-width: 480px)"
+                                    />
+                                    <img src="./images/product/product-six-desktop.jpg" alt="Product designer"/>
+                                </picture>
                                 <div class="card-dynamic-box card-dynamic-option">
                                     <p class="card-dynamic-text">Ресурс предлагает комплексные предложения с разным
                                         уровнем функционала и сервисов.
@@ -187,8 +370,30 @@
                     <li class="portfolio-card-margin portfolio-card-shadow">
                         <a href="/" class="link">
                             <div class="card-dynamic-part">
-                                <img src="images/img14.jpg" class="portfolio-card-photo" alt="Design" width="370"
-                                    height="294" />
+                                <picture>
+                                    <source
+                                    srcset="
+                                    ./images/product/product-seven-desktop.jpg   1x,
+                                    ./images/product/product-seven-desktop2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/product/product-seven-tablet.jpg   1x,
+                                    ./images/product/product-seven-tablet2x.jpg 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/product/product-seven-mob.jpg   1x,
+                                    ./images/product/product-seven-mob2x.jpg 2x
+                                    "
+                                    media="(min-width: 480px)"
+                                    />
+                                    <img src="./images/product/product-seven-desktop.jpg" alt="Product designer"/>
+                                </picture>
                                 <div class="card-dynamic-box card-dynamic-option">
                                     <p class="card-dynamic-text">Ресурс предлагает комплексные предложения с разным
                                         уровнем функционала и сервисов.
@@ -206,8 +411,30 @@
                     <li class="portfolio-card-margin portfolio-card-shadow">
                         <a href="/" class="link">
                             <div class="card-dynamic-part">
-                                <img src="images/img15.jpg" class="portfolio-card-photo" alt="Marketing" width="370"
-                                    height="294" />
+                                <picture>
+                                    <source
+                                    srcset="
+                                    ./images/product/product-eight-desktop.jpg   1x,
+                                    ./images/product/product-eight-desktop2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/product/product-eight-tablet.jpg   1x,
+                                    ./images/product/product-eight-tablet2x.jpg 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/product/product-eight-mob.jpg   1x,
+                                    ./images/product/product-eight-mob2x.jpg 2x
+                                    "
+                                    media="(min-width: 480px)"
+                                    />
+                                    <img src="./images/product/product-eight-desktop.jpg" alt="Product designer"/>
+                                </picture>
                                 <div class="card-dynamic-box card-dynamic-option">
                                     <p class="card-dynamic-text">Ресурс предлагает комплексные предложения с разным
                                         уровнем функционала и сервисов.
@@ -225,8 +452,30 @@
                     <li class="portfolio-card-margin portfolio-card-shadow">
                         <a href="/" class="link">
                             <div class="card-dynamic-part">
-                                <img src="images/img16.jpg" class="portfolio-card-photo" alt="App" width="370"
-                                    height="294" />
+                                <picture>
+                                    <source
+                                    srcset="
+                                    ./images/product/product-nine-desktop.jpg   1x,
+                                    ./images/product/product-nine-desktop2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/product/product-nine-tablet.jpg   1x,
+                                    ./images/product/product-nine-tablet2x.jpg 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                    />
+                                    <source
+                                    srcset="
+                                    ./images/product/product-nine-mob.jpg   1x,
+                                    ./images/product/product-nine-mob2x.jpg 2x
+                                    "
+                                    media="(min-width: 480px)"
+                                    />
+                                    <img src="./images/product/product-nine-desktop.jpg" alt="Product designer"/>
+                                </picture>
                                 <div class="card-dynamic-box card-dynamic-option">
                                     <p class="card-dynamic-text">Ресурс предлагает комплексные предложения с разным
                                         уровнем функционала и сервисов.
@@ -247,11 +496,11 @@
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer section">
         <div class="container">
             <ul class="footer-parts">
                 <li class="footer-parts__item list">
-                    <a href="/" class="logo link"><span class="logo__fraction">Web</span>Studio</a>
+                    <a href="/" class="logo logo-footer link"><span class="logo__fraction">Web</span>Studio</a>
                     <address class="">
                         <ul class="our-contacts">
                             <li class="our-contacts__list list">
@@ -267,7 +516,7 @@
                     </address>
                 </li>
                 <li class="footer-parts__item list">
-                    <h2 class="footer-parts__title">Присоединяйтесь</h2>
+                    <h2 class="footer-parts__title footer-parts__title--position">Присоединяйтесь</h2>
                     <ul class="our-sotial">
                         <li class="our-sotial__list">
                             <a href="" target="_blank">
@@ -299,10 +548,10 @@
                         </li>
                     </ul>
                 </li>
-                <li class="footer-parts__item list">
+                <li class="footer-parts__item position-correction list ">
                     <h2 class="footer-parts__title">Подпишитесь на рассылку</h2>
                     <form>
-                        <ul class="user-contact list group">
+                        <ul class="user-contact__group list">
                             <li class="user-contact__list">
                                 <label for="user mail footer">
                                     <input type="email" class="user-contact__input" name="user mail footer"
@@ -310,7 +559,7 @@
                                 </label>
                             </li>
                             <li>
-                                <button type="submit" class="user-contact__button">Отправить</button>
+                                <button type="submit" class="user-contact__button"><span class="user-contact__button--title">Отправить</span></button>
                             </li>
                         </ul>
                     </form>
