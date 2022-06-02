@@ -445,6 +445,10 @@
   color: #2196F3;
 }
 
+.mob-menu-soc__link:hover, .mob-menu-soc__link:focus {
+  color: var(--text-hover-color);
+}
+
 .mob-menu-phone__link {
   font-family: 'Roboto';
   font-style: normal;

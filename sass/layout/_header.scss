@@ -45,29 +45,29 @@
         display: none;
     }
     @include tablet {
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-    padding-left: 0;
-    margin-right:-50px;
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        padding-left: 0;
+        margin-right:-50px;
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.142;
-    letter-spacing: 0.02em;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.142;
+        letter-spacing: 0.02em;
     }
     @include desktop {
         display: flex;
-    flex-direction: row;
-    align-self: center;
-    padding-left: 0;
-    margin-right:-50px;
+        flex-direction: row;
+        align-self: center;
+        padding-left: 0;
+        margin-right:-50px;
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.142;
-    letter-spacing: 0.02em;
-}
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.142;
+        letter-spacing: 0.02em;
+    }
 }
 .site-nav__item {
     margin-right: 50px;
@@ -251,6 +251,9 @@
     letter-spacing: 0.02em;
 
     color: #2196F3;
+    &:hover, &:focus {
+        color: var(--text-hover-color);
+    }
 }
 .mob-menu-phone__link {
     font-family: 'Roboto';
